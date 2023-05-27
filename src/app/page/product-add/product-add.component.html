@@ -1,0 +1,7 @@
+<h2>Thêm sản phẩm</h2>
+<form (ngSubmit)="onHandleSubmit()" [formGroup] = "productForm">
+    <input type="text" formControlName="name">
+    <input type="text" formControlName="price">
+    <button type="submit" [disabled]="">Thêm</button>
+    {{productForm.value | json}}
+</form>
